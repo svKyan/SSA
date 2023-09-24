@@ -1,3 +1,6 @@
+#ifndef ARENA_H_
+#define ARENA_H_
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -30,3 +33,5 @@ void gfree(void* loc);
 void* galloc(size_t len);
 void* grealloc(void* loc, size_t len);
 void gdelete();
+
+#endif // ARENA_H_
